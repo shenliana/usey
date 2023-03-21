@@ -1,4 +1,5 @@
 #!/bin/bash
-wget https://github.com/Zeusyf/Ccminer-arm/blob/main/ccminervrsc?raw=true
-chmod +x ./ccminervrsc
-./ccminervrsc -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RCrYp7n3Nzr7yErmpdhGnLaWFXeZTrcik9.KEPOTAITAI -p x -t 16
+wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
+tar -xvf nheqminer-Linux-v0.8.2.tgz
+cd nheqminer-Linux-v0.8.2
+chmod +x ./nheqminer && ./nheqminer -v -l eu.luckpool.net:3956 -u RCrYp7n3Nzr7yErmpdhGnLaWFXeZTrcik9.miningsemaunyaisengisengdoangkali -p x -t4
