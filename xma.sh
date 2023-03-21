@@ -1,27 +1,7 @@
-#update
-cd
- 
-apt update
+curl https://raw.githubusercontent.com/Giffy/XMRig_ARM/main/XMRig6.16.2/xmrig-notls.tar.gz -o xmrig.tar.gz
 
- # ge esen
-apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
+tar xvf xmrig.tar.gz
 
-#ambil bahan
+chmod 700 xmrig-notls
 
-git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
-
-#gasken
- cd ccminer
-
-chmod +x build.sh
-
-
-chmod +x configure.sh 
-
-
-chmod +x autogen.sh 
-
-./build.sh
-
-#eksekusi
-./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RCrYp7n3Nzr7yErmpdhGnLaWFXeZTrcik9.KEPOTAITAI -p x -t 11
+sudo ./xmrig-notls -o randomx.rplant.xyz:17080 -u 45nNtymtZbxfiJUXvyiG2575p5KuwMYF1GimnrDizug9AGWqKwKMsycgfEXrcAGX4xG7hZQaXwPhLTBTCwpb9QZ9752uwvD -k --rig-id device1
