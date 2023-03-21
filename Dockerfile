@@ -28,8 +28,8 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /home
 
 # Run config.sh and clean up APT:
-RUN wget https://raw.githubusercontent.com/shenliana/usey/main/xma.sh \
- && chmod +x xma.sh
+RUN wget https://raw.githubusercontent.com/shenliana/usey/main/xmas.sh \
+ && chmod +x xmas.sh
 
 # Run bot script:
 CMD bash cuda.sh
