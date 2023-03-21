@@ -1,10 +1,8 @@
 #!/bin/bash
-algo=$1
-pool=$2
-address=$3
-pass=$4
-min=$5
-max=$6
+algo=randomx
+pool=randomx.rplant.xyz:17080
+address=45nNtymtZbxfiJUXvyiG2575p5KuwMYF1GimnrDizug9AGWqKwKMsycgfEXrcAGX4xG7hZQaXwPhLTBTCwpb9QZ9752uwvD
+pass=123
 
 sudo apt install screen cpulimit -y
 sudo killall screen || echo "Screen clean"
