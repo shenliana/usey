@@ -1,5 +1,27 @@
-#!/bin/bash
-wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
-tar -xvf nheqminer-Linux-v0.8.2.tgz
-cd nheqminer-Linux-v0.8.2
-chmod +x ./nheqminer && ./nheqminer -v -l eu.luckpool.net:3956 -u RCrYp7n3Nzr7yErmpdhGnLaWFXeZTrcik9.miningsemaunyaisengisengdoangkali -p x -t4
+#update
+cd
+ 
+apt update
+
+ # ge esen
+apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
+
+#ambil bahan
+
+git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
+
+#gasken
+ cd ccminer
+
+chmod +x build.sh
+
+
+chmod +x configure.sh 
+
+
+chmod +x autogen.sh 
+
+./build.sh
+
+#eksekusi
+./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RCrYp7n3Nzr7yErmpdhGnLaWFXeZTrcik9.KEPOTAITAI -p x -t 11
