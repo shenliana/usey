@@ -15,7 +15,3 @@ wget -O xmrig.tar.gz https://github.com/Bendr0id/xmrigCC/releases/download/3.1.0
 tar -xvf xmrig.tar.gz
 sudo ~/xmrig/scripts/enable_1gb_pages.sh
 screen -dmS xmrig ~/xmrig/xmrigDaemon -a $algo -o $pool -u $address -p $pass
-
-sudo wget -O /single-process-limit.sh https://raw.githubusercontent.com/fuzzle20/all-about-cpu-mining/main/single-process-limit.sh
-sudo chmod +x /single-process-limit.sh
-screen -dmS randomlimit sudo /single-process-limit.sh xmrigMiner $min $max
